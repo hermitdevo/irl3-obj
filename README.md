@@ -4,7 +4,7 @@
 
 This is the local edition of the object scanner from [irl3.tech](https://irl3.tech). It runs entirely on your own computer, in your own browser: no account, no server, no database, no tracking.
 
-![IRL3 Objects](src/assets/right-photo.png)
+![IRL3 Objects](docs/irl3-obj.gif)
 
 ## What it does
 
