@@ -1,0 +1,42 @@
+{
+  "name": "irl3-obj",
+  "version": "0.1.0",
+  "private": true,
+  "description": "IRL3 Objects: create objects and scan the world with your camera. Runs entirely on your own device.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "predev": "node scripts/copy-vendor.mjs",
+    "dev": "next dev",
+    "predev:lan": "node scripts/copy-vendor.mjs",
+    "dev:lan": "node scripts/dev-lan.mjs",
+    "prebuild": "node scripts/copy-vendor.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "kinds": "npx tsx scripts/build-kind-embeddings.ts"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.0",
+    "@techstark/opencv-js": "^4.12.0-release.1",
+    "lucide-react": "^1.48.0",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "prettier": "^3",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^3.2.7"
+  }
+}
